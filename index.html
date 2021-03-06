@@ -22,7 +22,7 @@
 </head>
 <body>
  
-<div class="container">
+<div class="container-main">
   
     <div class="header">  
       <img src="/images/image-hero-mobile.jpg" class="bg-img">
@@ -105,13 +105,15 @@
   </div>
 </div>
   <!-- Selection modal start -->
-  <div class="modal" id="modal">  
+ <div class="modal" id="modal">
+  </div>
+  <div class="container-modal modal-box" id="containerModal">  
     <h2 class="title">Back this project</h2>
     Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
   
   <form>
   <div class="modal-box">
-    
+  
     <label for="no-reward" class="container">
       <span class="title">Pledge with no reward</span>
       <input type="radio" id="no-reward" name="stands" value="1"  > 
@@ -122,12 +124,16 @@
     you will be signed up to receive product updates via email.
   </div>
   <div class="modal-box">
-    <h3 class="title">Bamboo Stand</h3> 
+   
   
     <label class="container" for="bamboo-stand"> 
-      <span class="pledge-value">Pledge $25 or more </span>
-      <input type="radio" id="bamboo-stand" name="stands" value="2">
-      <span class="radio"></span>
+      <div>
+        <span class="title">Bamboo Stand</span> 
+        <span class="pledge-value">Pledge $25 or more </span>
+        <input type="radio" id="bamboo-stand" name="stands" value="2">
+        <span class="radio"></span>
+      </div>
+      
     
     </label>
     You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
@@ -151,9 +157,10 @@
   <div class="modal-box">
   
   
-   <h3 class="title"> Black Edition Stand</h3> 
+   
    
    <label class="container" for="black-stand">
+    <span class="title"> Black Edition Stand</span> 
     <span class="pledge-value">Pledge $75 or more</span>
     <input type="radio" id="black-stand" name="stands" value="3">
     <span class="radio"></span>
@@ -176,9 +183,9 @@
     
     <!-- Selected pledge end -->
   <div class="modal-box">
-    <h3 class="title">Mahogany Special Edition</h3>
     
     <label  class="container" for="special-edition"> 
+      <span class="title">Mahogany Special Edition</span>
       <span class="pledge-value"> $200 or more</span>
       <input type="radio" id="special-edition" name="stands" value="4">  
       <span class="radio"></span>
@@ -202,18 +209,19 @@
     <!-- Selection modal end -->
 
     <!-- Success modal start -->
-    <span>
-    
-    Thanks for your support!
+  <div class="modal-completed modal-box ">
+    <img src="/images/icon-check.svg">
+    <h3 class="title">Thanks for your support!</h3>
     Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
     an email once our campaign is completed.
-    Got it!
-  </span>
+    <button class="button">Got it!</button> 
+  </div>
   
     <!-- Success modal end -->
   </form> 
-  </div>
+</div>  
 </div>
+
  
 </body>
 </html>

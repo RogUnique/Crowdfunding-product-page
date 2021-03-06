@@ -5,11 +5,11 @@
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-right: 15px;
   }
   
   /* Hide the browser's default radio button */
@@ -26,7 +26,8 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    border: 1px solid #eee;
+    background-color: #fff;
     border-radius: 50%;
   }
   
@@ -35,9 +36,10 @@
     background-color: #ccc;
   }
   
-  /* When the radio button is checked, add a blue background */
+  /* When the radio button is checked, add color to background */
   .container input:checked ~ .radio {
-    background-color: #2196F3;
+    background: white;
+    border-color: hsl(176, 50%, 47%);
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -48,16 +50,17 @@
   }
   
   /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .radio:after {
+  .container input:checked ~ .radio::after {
     display: block;
   }
-  
+   
   /* Style the indicator (dot/circle) */
-  .container .radio:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
+  .container .radio::after {
+      top: 9px;
+      left: 8px;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
-      background: white;
+      background:hsl(176, 50%, 47%);
+     
   }

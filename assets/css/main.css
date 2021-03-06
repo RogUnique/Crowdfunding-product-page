@@ -94,9 +94,10 @@ li {
      
   }
 .first-block {
-    margin: 45% auto; /* 45% from the top and centered */
-    
+    margin: 60% auto; /* 45% from the top and centered */
     margin-bottom: 0;
+    text-align: center;
+    border: solid black;
 }
 .second-block {
     margin: 10% auto; /* 10% from the top and centered */
@@ -115,9 +116,7 @@ li {
     font-size: 12px;
     color:rgb(128, 125, 125);
 }
-.modal-about {
-    margin-left: 5px;
-}
+
 .title {
     font-weight: 700;
     font-size: 16px;
@@ -183,11 +182,25 @@ h3 {
     color: black; 
 }
 .pledge-value {
+    margin-top: 20px;
     color:hsl(176, 50%, 47%);
     font-weight: 600;
     
 }
  
+.modal-completed {
+    display: none;
+    text-align: center;
+    top:0;
+    right: 1%;
+    width: 90%;
+    font-size:14px;
+    position: absolute;
+}
+
+.modal-completed button {
+    margin-top: 20px;
+}
 @media screen and (min-width: 376px) {
  
    body {
